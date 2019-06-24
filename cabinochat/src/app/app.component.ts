@@ -24,18 +24,22 @@ export class AppComponent {
   ]
 
   constructor() {
-    var video = document.getElementById('videoPlayer') as HTMLVideoElement;
-    video.addEventListener('ended', () => {
-      video.currentTime = 0.05;
-      video.play();
-    });
-
-
     var quoterefresh = setInterval(() => {
       var max = this.quotes.length;
       var quoteindex = Math.floor(Math.random() * max);
       this.quote = this.quotes[quoteindex];
     }, 15000)
 
+  }
+
+  ngOnInit() {
+    var video = document.getElementById('videoPlayer') as HTMLVideoElement;
+    if (video)
+      video.addEventListener('ended', () => {
+        video.currentTime = 0.05;
+        video.play();
+      });
+    else
+      console.log("player not found!")
   }
 }
