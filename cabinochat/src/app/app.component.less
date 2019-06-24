@@ -1,0 +1,58 @@
+.quote{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 300%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: fadein 30s infinite; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 30s infinite; /* Firefox < 16 */
+        -ms-animation: fadein 30s infinite; /* Internet Explorer */
+         -o-animation: fadein 30s infinite; /* Opera < 12.1 */
+            animation: fadein 30s infinite;
+            animation-delay: 15s;
+}
+
+@keyframes fadein {
+    0%   { opacity:0; }
+    25%  { opacity:1; }
+    50% { opacity:0; }
+    100% {opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    0%   { opacity:0; }
+    25%  { opacity:1; }
+    50% { opacity:0; }
+    100% {opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    0%   { opacity:0; }
+    5%  { opacity:1; }
+    10% { opacity:0; }
+    100% {opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    0%   { opacity:0; }
+    25%  { opacity:1; }
+    50% { opacity:0; }
+    100% {opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    0%   { opacity:0; }
+    25%  { opacity:1; }
+    50% { opacity:0; }
+    100% {opacity: 0; }
+}
+
+pre {
+
+    white-space: pre-wrap;
+
+}
