@@ -35,10 +35,13 @@ export class AppComponent {
   ngOnInit() {
     var video = document.getElementById('videoPlayer') as HTMLVideoElement;
     if (video)
-      video.addEventListener('ended', () => {
+    {
+      /*video.addEventListener('ended', () => {
         video.currentTime = 0.05;
         video.play();
-      });
+      });*/
+    }
+    video.play();
     else
       console.log("player not found!")
   }
