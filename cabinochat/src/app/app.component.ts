@@ -40,7 +40,7 @@ export class AppComponent {
         video.currentTime = 0.05;
         video.play();
       });*/
-      video.play();
+      //video.play();
     }
     
     else
