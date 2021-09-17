@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cabinochat';
-  playVideo = ()= > {
+  playVideo = function() {
     var video = document.getElementById('videoPlayer') as HTMLVideoElement;
     if (video)
       video.play();
-  }
+  };
   
   quote;
   quotes = ['я недавно видел как толстая тетка ела на улице булочку. просто шла и ела по ходу булочку. \n \
