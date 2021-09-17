@@ -1,9 +1,9 @@
 <video id="videoPlayer" style="position: fixed;  right: 0;  bottom: 0;  min-width: 100%; min-height: 100%;"
-    controls autoplay playsinline muted
+    controls="false" autoplay playsinline muted
    loop>
   <source src="/video" type="video/mp4"></video>
 
-<div class="quote">
-  <pre>{{quote}}</pre>
+<div class="quote" id="quote">
+  <pre style="user-select: none;">{{quote}}</pre>
 </div>
 <router-outlet></router-outlet>
