@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cabinochat';
+  playVideo = ()= > {
+    var video = document.getElementById('videoPlayer') as HTMLVideoElement;
+    if (video)
+      video.play();
+  }
+  
   quote;
   quotes = ['я недавно видел как толстая тетка ела на улице булочку. просто шла и ела по ходу булочку. \n \
     и я подумал что наверно она какое то время пыталась похудеть все таки (она была не старая, до 40 дет) но в какой то момент дропнула.\n \
@@ -36,14 +42,16 @@ export class AppComponent {
     var video = document.getElementById('videoPlayer') as HTMLVideoElement;
     if (video)
     {
-      /*video.addEventListener('ended', () => {
+      video.addEventListener('ended', () => {
         video.currentTime = 0.05;
         video.play();
-      });*/
+      });
       //video.play();
     }
     
     else
       console.log("player not found!")
   }
+  
+  
 }
